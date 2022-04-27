@@ -1,0 +1,65 @@
+{% extends 'navbar.html' %} {% load static %}
+{%block homeactive%}active{%endblock homeactive%}
+
+{%block hstatus%} 
+<hr class="w-100 m-0" style="height: 4px; opacity: 1; background-color: #f38e5a"/> 
+{%endblock hstatus%}
+{% block content %}
+<div class="d-flex-md car position-relative">
+    <div class="home_img position-absolute w-100 h-100">
+        <img src="https://media.istockphoto.com/photos/beautiful-emeraldcolored-glacial-rivers-of-iceland-taken-from-a-picture-id1202227531?k=20&m=1202227531&s=612x612&w=0&h=FT4gvrElP5uwyQGWo0a2c7Pk1L_16lfj5rIrFJtQ150=" alt="" class="w-100 h-100 overflow-hidden home_img">
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide car z-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="d-flex justify-content-center aligh-items-end car_head">
+            <h1 class="d-flex aligh-items-end">Do the right thing. Volunteer</h1>
+        </div>
+        <div class="carousel-inner position-absolute bottom-0 mb-5 car_div">
+            <div class="carousel-item active h-100 ">
+                <div class="d-flex w-100 h-100 justify-content-evenly align-items-center">
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100  justify-content-evenly">
+                <div class="d-flex w-100 h-100 justify-content-evenly align-items-center">
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item h-100  justify-content-evenly">
+                <div class="d-flex w-100 h-100 justify-content-evenly align-items-center">
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                    <div class="carou w-25 h-75 p-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
